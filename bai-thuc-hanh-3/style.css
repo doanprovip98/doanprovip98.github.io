@@ -1,0 +1,70 @@
+
+body{
+    max-width: 960px;
+    margin: 0 200px;
+
+}
+header{
+text-align: center;
+}
+footer{
+    text-align: center
+}
+h1{
+    padding: 20px;
+    color: aliceblue;
+    background-color: coral;
+    border: 5px solid gray;
+}
+h3{
+    color: bisque;
+}
+.banner{
+    width: 100%;
+}
+.imgbanner{
+    width: 100%;
+}
+.sanpham{
+border: 2px dotted gray;
+margin: 20px 0px;
+color: aliceblue;
+padding: 20px;
+background-color: coral;
+}
+
+button{
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: brown;
+}
+button:hover{
+    color: chartreuse;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.sanpham img{
+    width: 50%;
+    height: 300px;
+}
+.chitietsanpham{
+    padding: 5px 5px;
+    border: 2px dotted gray;
+}
+.chitietsanpham img{
+    width: 300px;
+    height: 200px;
+}
+.footer-content{
+    background-color: coral;
+    border: 2px solid gray; 
+    padding: 10px 5px;
+    color: aliceblue;
+}
