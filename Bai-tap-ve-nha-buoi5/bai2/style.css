@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-box img{
+    padding: 2px;
+    margin: 0px;
+    border: 5px solid white;
+    transition: 1s;
+}
+.grid-box img:hover{
+    transform: scale(1.5);
+}
