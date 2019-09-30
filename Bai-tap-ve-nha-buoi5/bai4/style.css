@@ -42,12 +42,21 @@ body{
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+.demo{
+    animation-name: coding;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
 @keyframes anim{
     0%{
         margin-top: -108px;
+        
+
     }
     40%{
         margin-top: -72px;
+       
     }
     70%{
         margin-top: -36px;
@@ -56,4 +65,13 @@ body{
         margin-top: 0px;
     }
     
+}
+
+@keyframes coding {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -100px;
+    }
 }

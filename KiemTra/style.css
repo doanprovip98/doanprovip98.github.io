@@ -1,0 +1,131 @@
+/* global css */
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    margin: 10px auto;
+    max-width: 1020px;
+    font-family: 'Montserrat', sans-serif;
+    animation: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+@keyframes anim{
+    from{
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    }
+    to{
+        background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    }
+}
+/* header css */
+header{
+    background-color: cornflowerblue;
+    padding: 10px;
+    height: 300px;
+    color: yellow;
+    border-radius: 10px;
+    position: relative;
+}
+.banner{
+    background-color: chartreuse;
+    height: 75%;
+    width: 90%;
+    border-radius: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner h1{
+    position: absolute;
+    font-size: 50px;
+    top: 10%;
+    color: gray;
+}
+.banner p{
+    position: absolute;
+    color: black;
+    bottom: 10px;
+    right: 10px;
+}
+.banner .logo{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    font-size: 200px;
+    transform: translate(-50%,-50%);
+   color: gray;
+}
+@keyframes logo{
+    from{
+        color: linear-gradient(to right, #0e0e0f, #404244, #787d7d, #b7bcb9, #fdfff9);
+    }
+    to{
+        color: linear-gradient(to left, #0e0e0f, #404244, #787d7d, #b7bcb9, #fdfff9);
+    }
+}
+
+/* main container css */
+
+.container{
+    margin-top:20px;
+    background-color: green;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.animal{
+    border: 2px solid grey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container .animal img{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    transition: 2s;
+}
+.container .animal img:hover{
+    transform: rotate(30deg);
+}
+
+/* css details */
+.content-detail{
+    margin-top:20px;
+    background-color: yellowgreen;
+    padding: 10px;
+    
+}
+.detail-img{
+    width: 100%;
+}
+button{
+    height: 50px;
+    border-radius: 20px;
+    background-color: palevioletred;
+    font-weight: bold;
+}
+
+
+
+
+
+/* footer css */
+footer{
+    margin-top:20px;
+    text-align: center;
+    padding: 20px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
