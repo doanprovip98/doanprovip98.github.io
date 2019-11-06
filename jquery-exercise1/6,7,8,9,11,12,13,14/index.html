@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Bai6 -->
+    <h1>abc</h1>
+    <div id="bai6">
+        <h1 id="child">div-1</h1>
+        <h1>div-2</h1>
+    </div>
+    <h1>xyz</h1>
+<!-- Bai8 -->
+<div id="form1">
+        <form name='demo_form1'>
+                First name: <input type="text" name="fname"><br>
+                Last name: <input type="text" name="lname"><br>
+                <input type="submit" value="Submit">
+            </form>
+</div>
+    <!-- Bai9 -->
+    <select id="myselect" onchange="getValue(this)">
+        <option value="1">Option-1</option>
+        <option value="2">Option-2</option>
+        <option value="3">Option-3</option>
+    </select>  
+    <ul>
+            <li>Html Tutorial</li>
+            <li>Mongodb Tutorial</li>
+            <li>Python Tutorial</li>
+    </ul>
+<div>
+    <span>Nhập chữ:  </span><input type="text" id='textbox' oninput="getContent(this)"><br>
+    <textarea name="result" id="result" cols="30" rows="10"></textarea>
+
+</div>
+   
+    <!-- Bai11 -->
+    <p onclick="click(this)">Click me!</p>
+    <div id="pushme"></div>
+    <form  name='demo_form2'>
+            First name: <input type="text" name="fname" id="fn"><br>
+            Last name: <input type="text" name="lname" id="ln"><br>
+            <input type="submit" value="Submit" id="submit1">
+    </form>
+    <ul id='TestJSON'>
+  
+    </ul>
+</body>
+<script src="main.js"></script>
+<script>var
+ profile={"name":'Doan','age':'16','gender':'male','relationship':'single'}
+    $.each(profile, function(key,value){
+        $('#TestJSON').append('<li>'+key+' is '+ value+'</li>');
+    })</script>
+</html>
