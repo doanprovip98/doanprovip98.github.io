@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Office-Do</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../library/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="../library/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="../library/slick-1.8.1/slick/slick-theme.css">
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbar-custom">
+    <a class="navbar-brand" href="#"><img src="../image/logo2.png" style="height: 40px;" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbartoggle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Sản phẩm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Liên hệ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="new.html">Tin tức</a>
+        </li>
+      </ul>
+      <div class="login-and-cart">
+        <a style="margin-right: 20px;" href="#" data-toggle="modal" data-target="#login-form-modal">Đăng nhập</a>
+        <a href="#">Giỏ hàng <i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- login-form -->
+  <div id="login-form-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header">
+          <h5 class="modal-title">Đăng nhập</h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Mật khẩu</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+            </div>
+            <button type="submit" class="btn btn-primary">Đăng nhập</button> <a style="color: red;font-size: 10px;"
+              href="">Bạn chưa có tài khoản.Đăng kí!</a>
+          </form>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide carousel-custom container-lg" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption">
+          <h4 style="color: white;">Tất cả những thứ bạn cần</h4>
+          <h3 class="display-4" style="color: #9A0E14;font-weight: bold;text-shadow: 2px 2px 5px gray !important;">CHO
+            VĂN
+            PHÒNG</h3>
+          <h4 style="color: white; text-transform: uppercase;">Giảm giá mạnh mỗi sản phầm</h4>
+          <button class="btn btn-outline-light">Mua ngay</button>
+        </div>
+        <img class="d-block w-100" src="../image/Canrousel1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption customize-slide2">
+          <h4 style="color: white;margin-bottom: 2px;">Sale up to</h4>
+          <h3 class="display-4" style="color: #9A0E14;font-weight: bold;text-shadow: 2px 2px 5px gray !important;">50%
+          </h3>
+          <p>Nhân dịp tết cổ truyền Office-Do dành tặng đến khách mua hàng nhiều trương chình khuyến mãi hấp dẫn. <br>
+            Click để xem thêm ...</p>
+          <button class="btn btn-outline-light">Xem thêm...</button>
+        </div>
+        <img class="d-block w-100" src="../image/canrousel2.jpg" alt="Second slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- jumbotron -->
+  <div class="jumbotron mt-1 pt-4 pb-4 mb-0">
+    <!-- <div id="bg"></div> -->
+    <div>
+      <img src="../image/item1.png" alt="iteam1">
+      <h4>cung cấp vpp <br> chuyên dụng</h4>
+    </div>
+    <div>
+      <img src="../image/item2.png" alt="iteam1">
+      <h4>cung cấp vpp <br> chuyên dụng</h4>
+    </div>
+    <div>
+      <img src="../image/item3.png" alt="iteam1">
+      <h4>mua sắm hiện đại <br> -thuận tiện-</h4>
+    </div>
+    <div>
+      <img src="../image/item4.png" alt="iteam1">
+      <h4>thanh toán an toàn <br>dễ dàng</h4>
+    </div>
+  </div>
+  <!-- brands -->
+  <div class="mt-1 mb-3 slick-custom container-fluid">
+    <h2 class="brands-tittle">Các thương hiệu </h2>
+    <div class="brands mt-1 mb-3">
+      <div><img src="../image/thuonghieu1.jpg" alt=""></div>
+      <div><img src="../image/thuonghieu2.jpg" alt=""></div>
+      <div><img src="../image/thuonghieu3.jpg" alt=""></div>
+      <div><img src="../image/thuonghieu4.jpg" alt=""></div>
+      <div><img src="../image/thuonghieu5.jpg" alt=""></div>
+      <div><img src="../image/thuonghieu6.jpg" alt=""></div>
+      <div><img src="../image/thuonghieu7.jpg" alt=""></div>
+      <div><img src="../image/thuonghieu8.jpg" alt=""></div>
+    </div>
+  </div>
+  <hr>
+  <!-- feedback -->
+  <div class="feedback">
+    <h4>---Phản hồi của khách hàng---</h4>
+    <div class="feedback-content">
+      <div class="card" style="width: 18rem;">
+        <img src="../image/avatar1.jpg" class="card-img-top" alt="avatar1">
+        <div class="card-body">
+          <p class="card-text">Đã là đối tác lâu năm của Office-Do. Chất lượng sản phẩm tốt trong tầm giá. Nguồn hàng
+            dồi dào. Tuy nhiên khâu vẫn chuyển còn hơi chậm. Nếu khắc phục được điểm trừ này sẽ là rất tốt. Sẽ tiếp tục
+            ủng hộ Office-Do</p>
+          <em style="font-weight: lighter">David</em>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../image/avatar2.jpg" class="card-img-top" alt="avatar2">
+        <div class="card-body">
+          <p class="card-text">Sản phẩm tốt giá cả hợp lý. Giao hàng nhanh, đóng gói cẩn thận. 10 điểm cho Office-Do.
+          </p>
+          <em style="font-weight: lighter">Thúy Mập Ú</em>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../image/avatar3.jpg" class="card-img-top" alt="avatar3">
+        <div class="card-body">
+          <p class="card-text">Chất lượng sản phẩm tốt.Mẫu mã đẹp. Giao hàng nhanh. Đóng gói cẩn thận. Sẽ tiếp tục mua
+            hàng tại Office-Do.</p>
+          <em style="font-weight: lighter">Kim</em>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <footer>
+    <div class="address">
+      <img src="../image/logo2.png" alt="">
+      <p><b>Add:</b> 53 Phố Nhổn, phường Minh Khai, quận Bắc Từ Liêm, thành phố Hà Nội</p>
+      <p><b>Phone:</b> 0987654321</p>
+      <p><b>Email:</b> office_doan@gmail.com</p>
+    </div>
+    <hr class="break-line">
+    <div class="contact">
+      <h3>Liên kết với chúng tôi</h3>
+      <p><i class="fab fa-facebook-square"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+    </div>
+    <hr class="break-line">
+    <div class="pay">
+      <h3>Chấp nhận thanh toán</h3>
+      <img src="../image/image-paypal.png" alt="">
+    </div>
+  </footer>
+  <div class="col-12" style="text-align: center;background-color: teal;color: white;
+    -webkit-box-shadow: -1px -7px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -7px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px -7px 10px 0px rgba(0,0,0,0.75);">
+    <h5 style="font-size: 20px;">&copy; Office-Do</h5>
+  </div>
+</body>
+<script src="../library/jquery.min.js"></script>
+<script src="../library/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../library/slick-1.8.1/slick/slick.min.js"></script>
+
+</html>
