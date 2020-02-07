@@ -467,7 +467,38 @@ footer .pay img{
     position: absolute;
     right: 20px;
 }
-.product .my-row .card{
-    width: 20%;
-    margin: 10px;
+.product .my-row .my-col .card:hover{
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+    transition: 1s;
 }
+.my-col .card .btn{
+    margin-right: 2px;
+    border-radius: 20px;
+}
+.my-col .card .btn-outline-primary{
+    color:#9A0E14;
+    border: 1px solid #9A0E14;
+}
+.my-col .card .btn-outline-primary:hover{
+    color: #fff;
+    background-color: #9A0E14;
+}
+.my-col .card .btn:hover{
+    transition: 1s;
+}
+@media (max-width:1024px){
+    .product{
+        height: 280vh;
+     }
+     .my-col .btn{
+    font-size: 80%;
+    }
+}
+@media (max-width:425px){
+    .product{
+        height: 900vh;
+     }
+}
+
