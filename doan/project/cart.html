@@ -9,7 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=vietnamese"
     rel="stylesheet">
   <!-- <link rel="stylesheet" href="../library/bootstrap-4.0.0/dist/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="../library/slick-1.8.1/slick/slick.css">
@@ -38,9 +39,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Liên hệ</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Tin tức  <span class="sr-only">(current)</a>
         </li>
       </ul>
       <div class="login-and-cart">
@@ -76,6 +74,78 @@
       </div>
     </div>
   </div>
+  
+  <div class="cart">
+    <h3>Giỏ hàng của bạn</h3>
+    <table>
+      <tr>
+        <th>SẢN PHẢM</th>
+        <th></th>
+        <th>GIÁ</th>
+        <th>SỐ LƯỢNG</th>
+        <th>THÀNH TIỀN</th>
+      </tr>
+      <tr>
+        <td>
+          <img style="width:100px" src="../image/keodandiem10.jpg" alt="">
+        </td>
+        <td>
+          Keo dán điểm  10
+        </td>
+        <td>
+          6.000vnđ
+        </td>
+        <td>
+          <form action="">
+            <label for="updown">Số lượng: </label>
+            <input class="updown" type="number">
+          </form>
+        </td>
+        <td>
+          18.000vnđ
+        </td>
+      </tr>
+    </table>
+    <button type="button" class="btn btn-outline-success mt-2" data-toggle="modal" data-target="#exampleModal">
+      Đặt hàng
+    </button>
+    <a href="product.html"><button class="btn btn-danger mt-2">Tiếp tục mua hàng</button></a>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Đặt hàng</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" id="form-pay">
+              <label for="name">Họ và tên(*): </label>
+              <input name="name" type="text" class="form-control" id="name">
+              <span class="error"></span><br/>
+              <label for="phone">Số điện thoại(*): </label>
+              <input name="phone" type="text" class="form-control" id="phone">
+              <span class="error"></span><br/>
+              <label for="address">Địa chỉ nhận hàng(*): </label>
+              <input name="address" type="text" class="form-control" id="address">
+              <span class="error"></span><br/>
+              <label for="code">Mã giảm giá (nếu có): </label>
+              <input type="text" class="form-control" id="code">
+              <hr>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+            <a href="cart.html"><button id="thanhtoan" type="submit" class="btn btn-primary">Tiến hành đặt hàng</button></a>
+            </form>
+          </div>
+          
+            
+          
+        </div>
+      </div>
+    </div>
+
+    </div>
   <footer>
     <div class="address">
       <img src="../image/logo2.png" alt="">
@@ -105,8 +175,10 @@
 </body>
 <script src="../library/jquery.min.js"></script>
 <!-- <script src="../library/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="../js/index.js"></script>
 <script src="../library/slick-1.8.1/slick/slick.min.js"></script>
 
