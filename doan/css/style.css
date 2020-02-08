@@ -539,6 +539,7 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
 }
 .cart table{
     text-align: center;
+    width: 100%;
 }
 .cart table th,td{
     padding: 1rem 3rem;
@@ -549,4 +550,23 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
     font-weight: lighter;
     font-style: italic;
     color: red;
+}
+@media (max-width:768px){
+    .cart table th,td{
+        padding: 0px;
+    }
+}
+@media (max-width:425px){
+    .cart{
+        width: 100%;
+        margin: 0;
+    }
+    .cart table th,td{
+        font-size: 70%;
+    }
+}
+@media (max-width:375px){
+    .cart table th,td{
+        font-size: 60%;
+    }
 }
