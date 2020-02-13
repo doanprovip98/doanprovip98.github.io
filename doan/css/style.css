@@ -3,8 +3,8 @@ html body{
     margin: 0;
     box-sizing: border-box;
     background-color: #ffffff;
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
     font-weight: bold;
 }
 /* nav */
@@ -253,6 +253,7 @@ box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.6)
     }
 }
 footer{
+    padding: 20px 10px;
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
@@ -458,14 +459,35 @@ footer .pay img{
 }
 /* PRODUCT */
 .product{
-   position: relative;
-   height: 200vh;
-   width: 100%;
+   /* position: relative; */
+   height: 220vh;
+   width: 90%;
+   /* left: 50%;
+   transform: translateX(-50%); */
+   margin: auto;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+}
+#product .my-col .card{
+    height: 360px;
+}
+#product .my-col .card .img-box{
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+.img-box img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .product .my-row{
-    width: 90%;
-    position: absolute;
-    right: 20px;
+    width: 100%;
+    /* position: absolute; */
+    /* right: 20px; */
 }
 .product .my-row .my-col .card:hover{
     -webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
@@ -474,8 +496,8 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
     transition: 1s;
 }
 .my-col .card .btn{
-    margin-right: 2px;
-    border-radius: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
 .my-col .card .btn-outline-primary{
     color:#9A0E14;
@@ -488,6 +510,13 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
 .my-col .card .btn:hover{
     transition: 1s;
 }
+.my-col .card h5{
+    font-size: 90%;
+}
+.my-col .card{
+    padding-top: 5px;
+    
+}
 @media (max-width:1024px){
     .product{
         height: 280vh;
@@ -498,7 +527,12 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
 }
 @media (max-width:425px){
     .product{
-        height: 900vh;
+        height: 1100vh;
+        width: 100%;
+        margin: 0;
+     }
+     .product .my-row{
+         margin: auto;
      }
 }
 /* details */
@@ -569,4 +603,9 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
     .cart table th,td{
         font-size: 60%;
     }
+}
+.form-search input{
+    background-color: burlywood;
+    height: 35px;
+    
 }
