@@ -4,7 +4,7 @@ html body{
     box-sizing: border-box;
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 /* nav */
@@ -416,45 +416,80 @@ footer .pay img{
 
 
 /* CONTACT */
-.contact1{
-    position: relative;
+.contact-page{
+    height: 200vh;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: url(/image/contact-bg.jpg);
+    margin: 0;
 }
-.contact1 video{
-    position: absolute;
-    top: 0;
-    left: 0;
+.contact-page .block{
+    height: 80vh;
+    background-color: white;
+    margin: auto; 
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.contact-page h2{
+   padding-top: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   text-shadow: 2px 2px 5px black;
+}
+.contact-page .block-1{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.block-2 form{
+    padding: 20px;
+}
+.block-2 form label,button,input,textarea{
+    margin-bottom: 10px;
+}
+.block-2 form .btn{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-color: darkslategrey;
+    border: darkslategrey;
 }
-.contact1 i{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    font-size: 35vw;
-    text-align: center;
-    color: #000;
-    line-height: 100vh;
-    mix-blend-mode: screen;
-}
-.contact1 i:hover{
-    background: #000;
-    color: #fff;
-}
+
 @media (max-width:768px){
-    .contact1{
-        flex-direction: column;
+    .contact-page .block-1{
+        font-size: 1rem;
     }
-    .contact1 i{
-        line-height: 50vh;
-        font-size: 35vw;
+    .block-2 form{
+        padding: 10px;
+    }
+    .block-2 form textarea{
+        font-size: 90%;
+    }
+}
+
+@media (max-width:768px){
+    .contact-page .block-1{
+        font-size: 1.3rem;
+        height: 55vh;
+    }
+    .contact-page .block-2{
+        height: 80vh;
+    }
+    
+    .block-2 form{
+        padding: 10px;
+    }
+    .block-2 form textarea{
+        font-size: 90%;
+    }
+}
+@media (max-width:320px){
+    .contact-page h2{
+        font-size: 150%;
+    }
+    .contact-page .block-1{
+        font-size: 1rem;
+        height: 48vh;
+    }
+    .contact-page .block-2{
+        height: 75vh;
     }
 }
 /* PRODUCT */
@@ -536,6 +571,7 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
      }
 }
 /* details */
+
 .plus{
     height: 70vh;
     position: relative;
@@ -548,7 +584,8 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
 .plus .my-row{
     width: 90%;
     position: absolute;
-    right: 20px;
+    left: 50%;
+    transform:translateX(-50%);
 }
 @media (max-width:768px){
     .plus{
@@ -557,10 +594,23 @@ box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
 }
 @media (max-width:425px){
     .plus{
-        height: 300vh;
+        height: 360vh;
+    }
+    .detail img{
+        width: 100%;
+    }
+    .detail .detail-content{
+        margin-left: 10px;
+    }
+    .plus .my-row{
+margin: auto;
     }
 }
-
+@media (max-width:320px){
+    .plus h3{
+        font-size: 120%;
+    }
+}
 .cart{
     padding-top: 30px;
     height: 100vh;
