@@ -419,7 +419,7 @@ footer .pay img{
 .contact-page{
     height: 200vh;
     width: 100%;
-    background: url(/image/contact-bg.jpg);
+    background: url(../image/contact-bg.jpg);
     margin: 0;
 }
 .contact-page .block{
