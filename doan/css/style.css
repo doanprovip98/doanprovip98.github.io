@@ -624,7 +624,7 @@ margin: auto;
 }
 .cart{
     padding-top: 30px;
-    height: 100vh;
+    height: 150vh;
     width: 80%;
     margin: auto;
 }
@@ -668,6 +668,5 @@ margin: auto;
 .form-search input{
     background-color: burlywood;
     height: 35px;
-    
 }
 

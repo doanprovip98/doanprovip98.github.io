@@ -75,7 +75,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="cart">
     <h3>Giỏ hàng của bạn</h3>
     <table>
@@ -91,27 +91,86 @@
           <img style="width:100px" src="../image/keodandiem10.jpg" alt="">
         </td>
         <td>
-          Keo dán điểm  10
+          Keo dán điểm 10
         </td>
         <td>
-          6.000vnđ
+          <div style="display: inline-block;" class="price">
+            6.000
+          </div><span>vnđ</span>
         </td>
         <td>
           <form action="">
             <input class="updown" type="number" value="3">
           </form>
         </td>
-        <td>
+        <td class="sum">
           18.000vnđ
         </td>
       </tr>
+      <tr>
+        <td>
+          <img style="width:100px" src="../image/ban-cat-giay-go-a4-vmax-min.jpg" alt="">
+        </td>
+        <td>
+          Bàn cắt giấy A4
+        </td>
+        <td>
+          <div style="display: inline-block;" class="price">
+            160.000
+          </div><span>vnđ</span>
+        </td>
+        <td>
+          <form action="">
+            <input class="updown" type="number" value="1">
+          </form>
+        </td>
+        <td>
+          160.000vnđ
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img style="width:100px" src="../image/1-ram-giay-A4-bao-nhieu-to.png" alt="">
+        </td>
+        <td>
+          Giấy A4 Double A
+        </td>
+        <td>
+          <div style="display: inline-block;" class="price">
+            70.000
+          </div><span>vnđ</span>
+        </td>
+        <td>
+          <form action="">
+            <input class="updown" type="number" value="2">
+          </form>
+        </td>
+        <td>
+          140.000vnđ
+        </td>
+      </tr>
     </table>
+    <p style="text-align: right; font-size: 1rem;margin-top: 1rem;">Tổng cộng:318.000vnđ</p>
+    <div class="pay">
+      <form action="/action_page.php">
+        <p>Chọn hình thức  thanh toán:</p>
+        <input type="radio" id="male" name="pay" value="cod">
+        <label for="male">Thanh toán sau khi nhận hàng (C.O.D)</label><br>
+        <input type="radio" id="female" name="pay" value="ib">
+        <label for="female">Thanh toán bằng thẻ ngân hàng (Internet Banking)</label><br>
+        <input type="radio" id="other" name="pay" value="qr">
+        <label for="other">Thanh toán bằng ví điện tử (QR Code)</label><br>
+        <input type="radio" id="other" name="pay" value="qt">
+        <label for="other">Thanh toán bằng thẻ quốc tế (VISA,MASTER,PANPAY,EBAY)</label>
+      </form>
+    </div>
     <button type="button" class="btn btn-outline-success mt-2" data-toggle="modal" data-target="#exampleModal">
       Đặt hàng
     </button>
     <a href="product.html"><button class="btn btn-danger mt-2">Tiếp tục mua hàng</button></a>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -124,28 +183,26 @@
             <form action="" id="form-pay">
               <label for="name">Họ và tên(*): </label>
               <input name="name" type="text" class="form-control" id="name">
-              <span class="error"></span><br/>
+              <span class="error"></span><br />
               <label for="phone">Số điện thoại(*): </label>
               <input name="phone" type="text" class="form-control" id="phone">
-              <span class="error"></span><br/>
+              <span class="error"></span><br />
               <label for="address">Địa chỉ nhận hàng(*): </label>
               <input name="address" type="text" class="form-control" id="address">
-              <span class="error"></span><br/>
+              <span class="error"></span><br />
               <label for="code">Mã giảm giá (nếu có): </label>
               <input type="text" class="form-control" id="code">
               <hr>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-            <a href="cart.html"><button id="thanhtoan" type="submit" class="btn btn-primary">Tiến hành đặt hàng</button></a>
+              <a href="cart.html"><button id="thanhtoan" type="submit" class="btn btn-primary">Tiến hành đặt
+                  hàng</button></a>
             </form>
           </div>
-          
-            
-          
         </div>
       </div>
     </div>
 
-    </div>
+  </div>
   <footer>
     <div class="address">
       <img src="../image/logo2.png" alt="">
