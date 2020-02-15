@@ -664,6 +664,9 @@ margin: auto;
     .cart table th,td{
         font-size: 60%;
     }
+    .cart .pay{
+        font-size: 80%;
+    }
 }
 .form-search input{
     background-color: burlywood;
