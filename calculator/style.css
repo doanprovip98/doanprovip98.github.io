@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to left, #cc95c0, #dbd4b4, #7aa1d2);
+    font-family: 'Lato', sans-serif;
+}
+body .main{
+    width: 300px;
+    font-size: 200%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+.main form input{
+    height: 30px;
+    border-radius: 10px;
+    width: 97%;
+    box-shadow: 2px 2px 5px black;
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+}
+.main table tbody{
+    width: 100%;
+}
+.main table input{
+    background-color: seagreen;
+    color: white;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px black;
+    outline: none;
+}
+.main table input:hover{
+    color: black;
+    background-color: skyblue;
+}
+.changetheme{
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    outline: none;
+}
