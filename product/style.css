@@ -1,0 +1,33 @@
+body{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+.shopping-cart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.quantity button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+}
+.quantity input{
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
+thead{
+    font-weight: bold;
+}
+.pay{
+    font-weight: bold;
+}
