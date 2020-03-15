@@ -15,6 +15,5 @@ function rollback(){
     document.form.textview.value = exp.substring(0,exp.length-1); 
 }
 function changeTheme(){
-    var body = document.getElementsByTagName('body')
-    body.style.background="linear-gradient(to left, #0f2027, #203a43, #2c5364)";
+   
 }
