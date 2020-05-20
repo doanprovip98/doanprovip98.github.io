@@ -78,4 +78,7 @@ body{
     .btn-search{
         padding: 10px 27px;
     }
+    .weather h1{
+        font-size: 200%;
+    }
 }
