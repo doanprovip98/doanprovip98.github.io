@@ -1,14 +1,15 @@
 const API={
-    api:'http://api.openweathermap.org/data/2.5/weather?q=',
+    api:'https://api.openweathermap.org/data/2.5/weather?q=',
     key:'&appid=ab5740463d8f8704f13ab32066a84b5e'
 }
 const getAPI=(city)=>{
     fetch(API.api+city+API.key)
     .then(res=>res.json())
     .then(data=>{
+        console.log(data);
         let cityName=data.name;
         let country=data.sys.country;
-        let icon="http://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";
+        let icon="https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";
         let temp=Math.round(data.main.temp/10)+"°c";
         let descriptionWeather=data.weather[0].description; 
         let minTemp=Math.round(data.main.temp_min/10)+"°c";
