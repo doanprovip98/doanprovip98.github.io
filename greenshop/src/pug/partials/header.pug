@@ -1,0 +1,68 @@
+mixin social(classIcon)
+     li
+         a(href="#")
+             i(class=classIcon)
+header
+     section.top-bar
+         .container
+             .row.justify-content-between
+                 .col-auto
+                     span
+                      != '<i class="far fa-clock"></i>' + ' Open time : 8:00 - 18:00 Monday - Sunday'
+                     ul.top-bar__social--list
+                         each item in social
+                             +social(item)
+                 .col-auto
+                     .top-bar__links
+                         a(href="login.html")
+                             !='<i class="fas fa-user"></i>'+ ' Đăng nhập'
+                         a(href="signup.html")
+                             !='<i class="fas fa-user-plus"></i>'+ ' Đăng kí'      
+     section.banner
+         .container   
+             .row
+                 .col-lg-6.col-md-12
+                     .banner__brand
+                         img(src="assets/images/logo.png", alt="logo")
+                         img(src="assets/images/cay1.png", alt="logo")
+                         img(src="assets/images/cay2.png", alt="logo")
+                 .col-lg-6.col-md-12
+                     .banner__search
+                         h5 
+                             !='<i class="fas fa-phone-alt"></i>'    +' HỖ TRỢ:  (04) 6674 2332 - (04) 3786 8904'
+                         .input-group
+                             input(type="text" placeholder="Tìm kiếm...")
+                             .input-group-append
+                                 button
+                                     i(class="fas fa-search")
+                         a(href="cart.html")
+                             !='<i class="fas fa-shopping-basket"></i>' + ' Giỏ hàng 0'
+     section.nav-bar
+         .container
+             nav.navbar.navbar-expand-lg.navbar-dark.text-5
+                 button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                     span.navbar-toggler-icon
+                 .collapse.navbar-collapse#navbarSupportedContent
+                     ul.navbar-nav.mr-auto
+                         li.nav-item
+                             a.nav-link.active(href="index.html") Trang chủ
+                         li.nav-item
+                             a.nav-link(href="about.html") Giới thiệu
+                         li.nav-item.dropdown
+                             a.nav-link(href="products.html") Sản phẩm
+                                 span.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                             .dropdown-menu(aria-labelledby="navbarDropdown")
+                                 a.dropdown-item(href="#")
+                                 a.dropdown-item(href="#")
+                                 a.dropdown-item(href="#")
+                         li.nav-item.dropdown
+                             a.nav-link(href="products.html") Sản phẩm mới
+                                 span.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                             .dropdown-menu(aria-labelledby="navbarDropdown")
+                                 a.dropdown-item(href="#")
+                                 a.dropdown-item(href="#")
+                                 a.dropdown-item(href="#")
+                         li.nav-item
+                             a.nav-link(href="blog.html") Tin tức 
+                         li.nav-item
+                             a.nav-link(href="contact.html") Liên hệ     

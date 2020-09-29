@@ -1,0 +1,73 @@
+.list-links{
+    margin-top: 5rem;
+    &--title{
+        @include title
+    }
+    @include line(50%);
+    a{
+        display: block;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
+    }
+    a:hover,a:active{
+        color: rgb( 63, 184, 113 );
+    }
+}
+.list-colors{
+    margin-top: 5rem;
+    &--title{
+        @include title
+    }
+    @include line(50%);
+    a{
+        display: block;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin-left: 4rem;
+    }
+    a:hover,a:active{
+        color: rgb( 63, 184, 113 );
+    }
+    &__item{
+        margin-bottom: 2rem;
+        .color--circle{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            float: left;
+        }
+    }
+}
+.products{
+    margin-top: 5rem;
+    img{
+        margin-bottom: 2rem;
+    }
+    &--tool{
+        margin-bottom: 2rem;
+        a{
+            margin-right: 1rem;
+            i{
+                font-size: 1.8rem;
+            }
+        }
+        a.active,a:hover{
+            i{
+                color: rgb( 63, 184, 113 );
+            }
+        }
+        form{
+            display: inline-block;
+            float: right;
+            label{
+                font-size: 1.2rem;
+            }
+            select{
+                padding: 0.5rem 1rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+   
+}

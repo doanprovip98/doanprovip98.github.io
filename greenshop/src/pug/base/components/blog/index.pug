@@ -1,0 +1,42 @@
+mixin blog-item(title,image,text)
+     a(href="detailBlog.html")
+         .blogs__item
+             h4.item__title=title
+             span.item__info
+                 !='<i class="far fa-calendar-minus"></i>'+'  20/12/2015' + '<i class="far fa-clock"></i>'+ '  11:20:00 AM'+ '<i class="far fa-comment-dots"></i>' + '  0 bình luận'
+             img.d-block.w-100(src=image, alt="image")
+             p.item__text=text
+.container
+     .row
+         .col-lg-3.col-sm-12
+             section.hot-blogs
+                 h5.hot-blogs--title Tin tức nổi bật
+                 .line
+                     .line__child
+                 +hot-blog-item(hotBlogImg1,hotBlogText1)
+                 +hot-blog-item(hotBlogImg2,hotBlogText2)
+                 +hot-blog-item(hotBlogImg3,hotBlogText3)
+                 +hot-blog-item(hotBlogImg4,hotBlogText4)
+                 +hot-blog-item(hotBlogImg5,hotBlogText5)
+             section.blog-tags
+                 h5.blog-tags--title Blog tag
+                 .line
+                     .line__child 
+                 .row     
+                     +blog-tag-item(blogTag1)
+                     +blog-tag-item(blogTag2)
+                     +blog-tag-item(blogTag3)
+                     +blog-tag-item(blogTag4)
+                     +blog-tag-item(blogTag5)
+                     +blog-tag-item(blogTag6)
+                     +blog-tag-item(blogTag7)
+                     +blog-tag-item(blogTag8)
+                     +blog-tag-item(blogTag9)  
+         .col-lg-9.col-sm-12
+             section.blogs
+                 +blog-item(blogTitle1,blogImg1,blogText)
+                 +blog-item(blogTitle2,blogImg2,blogText)
+                 +blog-item(blogTitle3,blogImg3,blogText)
+             +pagination    
+
+                     

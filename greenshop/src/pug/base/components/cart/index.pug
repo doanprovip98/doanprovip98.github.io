@@ -1,0 +1,79 @@
+.container
+     section.cart
+         h3.cart--title Giỏ hàng
+         table.table.table-bordered
+             thead
+                 tr
+                     th(scope="col") Hình ảnh
+                     th(scope="col") Tên sản phẩm
+                     th(scope="col") Đơn giá 
+                     th(scope="col") Số lượng
+                     th(scope="col") Thành tiền
+                     th(scope="col") Xóa
+             tbody
+                 tr
+                     td(scope="row1")
+                         img(src=image3, alt="product")
+                     td 
+                         p Cây Dạ Lam
+                     td  
+                         p 270.000 đ
+                     td  
+                         input(type="text" value="1")
+                     td 
+                         p 270.000 đ
+                     td      
+                         p
+                             !='<i class="far fa-trash-alt"></i>'  
+                 tr
+                     td(scope="row1")
+                         img(src=image3, alt="product")
+                     td 
+                         p Cây Dạ Lam
+                     td  
+                         p 270.000 đ
+                     td  
+                         input(type="text" value="1")
+                     td 
+                         p 270.000 đ
+                     td      
+                         p
+                             !='<i class="far fa-trash-alt"></i>' 
+                 tr
+                     td(scope="row1")
+                         img(src=image3, alt="product")
+                     td 
+                         p Cây Dạ Lam
+                     td  
+                         p 270.000 đ
+                     td  
+                         input(type="text" value="1")
+                     td 
+                         p 270.000 đ
+                     td      
+                         p
+                             !='<i class="far fa-trash-alt"></i>'                          
+         .cart__box.cart__box--button
+             button.btn.btn-success Tiếp tục mua
+             button.btn.btn-outline-success Hủy đơn hàng
+         .cart__box.cart__box--table
+             table.w-50.table.table-bordered
+                 tbody
+                     tr
+                         td
+                             p Tổng tiền chưa thuế
+                         td
+                             p 270.000 đ    
+                     tr
+                         td
+                             p Thuế(VAT 10%)
+                         td
+                             p 27.000 đ    
+                 tfoot
+                     tr
+                         td
+                             p Tổng phải thanh toán  
+                         td
+                             p 297.000 đ                   
+         .cart__box.cart__box--button
+             button.btn.btn-success Thanh toán

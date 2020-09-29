@@ -1,0 +1,78 @@
+mixin comment-item
+     .comment__item
+         img(src=avatar, alt="avatar")
+         h4.comment__item--username Phạm Văn Đoàn
+         p.comment__item--content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quod, praesentium, omnis ducimus voluptas exercitationem nulla maxime numquam debitis assumenda temporibus saepe ipsum consectetur quos expedita nam. Ipsam, animi libero.
+         button.btn.btn-secondary Trả lời
+
+.container
+     .row
+         .col-lg-3.col-sm-12
+             section.hot-blogs
+                 h5.hot-blogs--title Tin tức nổi bật
+                 .line
+                     .line__child
+                 +hot-blog-item(hotBlogImg1,hotBlogText1)
+                 +hot-blog-item(hotBlogImg2,hotBlogText2)
+                 +hot-blog-item(hotBlogImg3,hotBlogText3)
+                 +hot-blog-item(hotBlogImg4,hotBlogText4)
+                 +hot-blog-item(hotBlogImg5,hotBlogText5)
+             section.blog-tags
+                 h5.blog-tags--title Blog tag
+                 .line
+                     .line__child 
+                 .row     
+                     +blog-tag-item(blogTag1)
+                     +blog-tag-item(blogTag2)
+                     +blog-tag-item(blogTag3)
+                     +blog-tag-item(blogTag4)
+                     +blog-tag-item(blogTag5)
+                     +blog-tag-item(blogTag6)
+                     +blog-tag-item(blogTag7)
+                     +blog-tag-item(blogTag8)
+                     +blog-tag-item(blogTag9)  
+         .col-lg-9.col-sm-12
+             section.detail-blog
+                 h3.detail-blog__title=blogTitle1
+                 span.detail-blog__info
+                     !='<i class="far fa-calendar-minus"></i>'+'  20/12/2015' + '<i class="far fa-clock"></i>'+ '  11:20:00 AM'+ '<i class="far fa-comment-dots"></i>' + '  0 bình luận'
+                 img.d-block.w-100(src=blogImg1, alt="img")
+                 p.detail-blog__content=blogText1
+                 br
+                 p.detail-blog__content=blogText2
+                 br
+                 p.detail-blog__content=blogText3
+                 br
+                 p.detail-blog__content=blogText4
+                 br
+                 p.detail-blog__content=blogText1
+                 br
+                 p.detail-blog__content=blogText2
+                 img.d-block.w-100(src=blogImg2, alt="img")
+                 p.detail-blog__content=blogText3
+                 br
+                 p.detail-blog__content=blogText4
+                 br
+             section.comment
+                 .comment--box       
+                     h3 Bình luận(3)
+                     +comment-item
+                     +comment-item
+                     +comment-item
+                 .comment--form
+                     h3 Viết bình luận :
+                     form(action="#")
+                         .row
+                             .col-4
+                                 input(type="text" placeholder="Họ tên: ")
+                             .col-4
+                                 input(type="text" placeholder="Email: ")
+                             .col-4
+                                 input(type="text" placeholder="Số điện thoại: ")
+                             .col-12
+                                 textarea(name="comment", cols="150", rows="10" placeholder="Bình luận")
+                         button(type="submit") Gửi 
+                                          
+
+
+                 

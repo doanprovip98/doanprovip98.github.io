@@ -1,0 +1,87 @@
+.cart{
+    margin-bottom: 10rem;
+    h3{
+        margin-top: 5rem;
+        color: rgb( 63, 184, 113 );
+    }
+   table{
+       margin-top: 5rem;
+       th{
+           text-align: center;
+           font-size: 1.2rem;
+           background-color: rgb( 63, 184, 113 );
+           color: #fff;
+       }
+       img{
+           width: 10rem;
+           height: 10rem;
+           display: block;
+           margin: auto;
+       }
+       p{
+           text-align: center;
+           line-height: 10rem;
+           font-size: 1.5rem;
+           i{
+               font-size: 1.5rem;
+               cursor: pointer;
+           }
+       }
+       input{
+           display: block;
+           width: 20%;
+           text-align: center;
+           padding: 1rem;
+           font-size: 1.5rem;
+           margin: 3rem auto;
+       }
+   }
+    .cart__box{
+        margin:2rem 0 ;
+        width: 100%;
+        button{
+            margin-top: 3rem;
+            float:right;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            padding: 1rem;
+            border-radius: 2rem;
+        }
+        .btn-success{
+            background-color: rgb( 63, 184, 113 ) !important;
+            border:1px solid rgb( 63, 184, 113 ) !important;
+        }
+        .btn-outline-success{
+            border: 1px solid rgb( 63, 184, 113 ) !important;
+            color: rgb( 63, 184, 113 ) !important;
+        }
+        .btn-outline-success:hover{
+            background-color: rgb( 63, 184, 113 );
+            color: #fff !important;
+        }
+        &--button{
+            height: 6rem;
+        }
+        &--table{
+            height: 45rem;
+           
+            table{
+                float: right;
+                tbody{
+                    p{
+                        color: rgb( 63, 184, 113 );
+                        font-weight: bolder;
+                    }
+                }
+                tfoot{
+                    td{
+                        background-color: rgb( 63, 184, 113 );
+                        font-weight: bolder;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
+}

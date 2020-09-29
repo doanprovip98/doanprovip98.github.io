@@ -1,0 +1,40 @@
+.signup{
+    margin: 5rem 0;
+    h3{
+        color: rgb( 63, 184, 113 );
+        margin: 2rem 0;
+        text-transform: uppercase;
+    }
+    input:not(#check){
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+    label{
+        font-size: 1.5rem;
+        span{
+            color: red;
+            font-size: 1.5rem;
+        }
+    }
+    button{
+        margin-top: 3rem;
+        background-color: rgb( 63, 184, 113 );
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    .btn-outline-success{
+        color: rgb( 63, 184, 113 );
+        background-color: #fff;
+        border-radius: 1px solid rgb(63,184,113);
+    }
+    .btn-outline-success:hover{
+        background-color: rgb( 63, 184, 113 );
+        color: #fff;
+        border-radius: 1px solid rgb(63,184,113);
+    }
+}

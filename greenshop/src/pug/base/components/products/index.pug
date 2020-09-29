@@ -1,0 +1,71 @@
+mixin link(link)
+     a(href="#")!= "&rsaquo;" + link
+mixin listLink(list)
+     each item in list
+         +link(item)
+         br     
+mixin color-item(color,name)
+     .col-6
+         .list-colors__item
+             .color--circle(style=color)
+             a(href="#")=name
+mixin product-item(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+     .col-lg-4.col-xs-6
+         +product(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+.container
+     .row
+         .col-lg-3.col-sm-12
+             section.list-links
+                 h5.list-links--title Danh mục sản phẩm
+                 .line
+                     .line__child
+                 +listLink(list7)
+             section.list-links
+                 h5.list-links--title Danh mục sản phẩm
+                 .line
+                     .line__child
+                 +listLink(list8)    
+             section.list-colors
+                 h5.list-colors--title Tìm theo màu    
+                 .line
+                     .line__child
+                 .row
+                     +color-item(green,"Xanh cây")
+                     +color-item(red_orange,"Đỏ cam")
+                     +color-item(purple,"Tím")
+                     +color-item(sky,"Xanh trời")
+                     +color-item(yellow,"Vàng")
+                     +color-item(pink,"Hồng")
+         .col-lg-9.col-sm-12
+             .products
+                 img.d-block.w-100(src=bannerProduct, alt="banner")
+                 .products--tool
+                     a.active(href="#")
+                         i.fas.fa-th
+                     a(href="#")
+                         i.fas.fa-list
+                     form
+                         label(for="fillter") Sắp xếp theo: 
+                         select#fillter(name="fillter")
+                             option(value="name") Tên sản phẩm
+                             option(value="price-down") Giá giảm dần
+                             option(value="price-up") Giá tăng dần
+                         label(for="view") Sắp xếp theo: 
+                         select#fillter(name="view")
+                             option(value="5") 5
+                             option(value="10") 10
+                             option(value="15") 15
+             .row
+                 +product-item(image1,"Cây chân chim","200.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image2,"Cây Dạ Lam","100.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image3,"Cây Danh Dự","150.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image4,"Cây dứa nhỏ","300.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image5,"Cây cọ ta","400.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image6,"Cây xương rồng","180.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image7,"Cây chân chim","345.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image8,"Cây đa búp đỏ","1.000.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image1,"Cây chân chim","250.000 đ","250.000 đ",isTag,green,"new")
+                 +product-item(image4,"Cây Dạ Lam","500.000 đ","250.000 đ",isTag,red,"-50%")
+             +pagination       
+
+                                

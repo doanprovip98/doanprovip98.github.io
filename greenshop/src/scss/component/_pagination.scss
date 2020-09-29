@@ -1,0 +1,17 @@
+.pagination-nav{
+    float: right;
+    margin: 2rem 0 5rem 0;
+    li{
+        margin: 0 0.5rem;
+        a{
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            color: gray;
+        }
+        a:hover,a.active{
+            border: 1px solid rgb( 63, 184, 113 );
+            color: wheat;
+            background-color: rgb( 63, 184, 113 );
+        }
+    }
+}

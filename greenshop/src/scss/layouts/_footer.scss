@@ -1,0 +1,81 @@
+footer{
+    width: 100%;
+    background-color: rgb( 49, 49, 49 );
+    color: papayawhip;
+    hr{
+        background-color: papayawhip;
+    }
+    .foot-1{
+        padding: 2rem 0 2rem 0;
+        &__item{
+            text-transform: uppercase;
+            font-weight: lighter;
+            margin-top: 1rem;
+            a{
+                margin-right: 2rem;
+                color: papayawhip;
+            }
+            input{
+                padding: 1.5rem;
+            }
+            button{
+                background-color: rgb( 63, 184, 113 );
+                i{
+                    color: papayawhip;
+                }
+            }
+        }
+    }
+    .foot-2{
+        padding: 2rem 0 2rem 0;
+        &__item{
+            font-size: 1.6rem;
+        }
+        &__item--about{
+            width: 80%;
+            i{
+                color: rgb( 63, 184, 113 );
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        &__item--link{
+            margin-top: 2rem;
+            h4{
+                color: rgb( 63, 184, 113 );
+            }
+            a{
+                color: papayawhip;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .foot-3{
+        padding: 2rem 0 2rem 0;
+        .foot-3__item{
+            a{
+                color: papayawhip;
+                font-size: 1.2rem;
+            }
+        }
+        .foot-3__item--links{
+            a{
+                margin-right: 1rem;
+            }
+        }
+        .foot-3__item--pay{
+            i{
+                font-size: 2rem;
+            }
+            a{
+                margin-left: 1rem;
+            }
+        }
+    }
+    .foot-4{
+        padding: 1rem 0 1rem 0;
+        background-color: rgb( 67, 67, 67 );
+        text-align: center;
+    }
+}

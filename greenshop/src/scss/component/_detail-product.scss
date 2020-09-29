@@ -1,0 +1,126 @@
+@mixin social($color) {
+    margin: 2rem 0;
+    background: $color;
+    color: #fff;
+    cursor: pointer;
+}
+.product-preview{
+    width: 100%;
+    margin: 5rem 0;
+    img{
+        width: 100%;
+        cursor: pointer;
+    }
+    >img{
+        margin-bottom: 2rem;
+    }
+}
+.product-info{
+    margin: 5rem 0;
+    h3{
+        font-size: 4rem;
+        font-weight: lighter;
+    }
+    >span{
+        font-size: 1.2rem;
+        i{
+            font-size: 1.2rem;
+            color: yellow;
+        }
+    }
+    &__price{
+        padding: 2rem 0;
+        &--new{
+            font-size: 1.8rem;
+            color: red;
+            font-weight: bolder;
+            margin-right: 1rem;
+        }
+        &--old{
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+    }
+    &__content{
+        font-size: 1.5rem;
+    }
+    label{
+        padding: 2rem 0;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    .btn-increase,.btn-decrease{
+        border: 1px solid black;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+    input{
+        width: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .btn-buy{
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        color: #fff;
+        background-color: rgb( 63, 184, 113 );
+        font-size: 1.5rem;
+    }
+    .btn-search,.btn-heart{
+        border: 1px solid rgba($color: gray, $alpha: 0.5);
+        padding: 1rem;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    .btn-facebook{
+        @include social(rgb(30, 18, 158));
+    }
+    .btn-tweet{
+       @include social( rgb(36, 163, 230));
+    }
+    .btn-share{
+        @include social(rgb(237, 50, 33))
+    }
+    .btn-google{
+        margin: 2rem 0;
+        border: 1px solid black;
+        color: rgb(237, 50, 33) ;
+        cursor: pointer;
+    }
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: rgba($color: gray, $alpha: 0.5);
+        margin: 1rem 0;
+    }
+}
+.product-tab{
+    ul{
+        li{
+            a{
+                font-size: 1.5rem;
+                font-weight: bolder;
+                padding: 1rem 2rem;
+            }
+            a.active{
+                color: rgb( 63, 184, 113 ) !important;
+                border-top: 1px solid black !important;
+            }
+        }
+    }
+    &__item{
+        padding: 1rem 0;
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
+.product-same-type{
+    &--title{
+        @include title;
+    }
+    @include line(10%);
+}

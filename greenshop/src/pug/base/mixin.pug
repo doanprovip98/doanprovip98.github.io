@@ -1,0 +1,43 @@
+mixin product(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+     a(href="detailProduct.html")    
+          .products__item
+             .item__img
+                 .item__tag(style=tag+tagColor)
+                     span=tagContent
+                 .overlay
+                 .btn-group
+                     button.btn-success.btn
+                         a.text-light(href="cart.html") Mua ngay
+                     button.btn.btn-light
+                         a(href="detailProduct.html")
+                             !='<i class="fas fa-search"></i>'
+                 img.d-block.w-100(src=image,alt="sp")
+             h5.item__name= name
+             span.item__star
+                 != star
+             p.item__price
+                 span=priceNew
+                 span="  "+priceOld
+mixin pagination
+     nav.pagination-nav(aria-label="Page navigation example")
+         ul.pagination
+             li.page-item
+                 a.active.page-link(href="#") Trang trước
+             li.page-item
+                 a.active.page-link(href="#") 1
+             li.page-item
+                 a.page-link(href="#") 2        
+             li.page-item
+                 a.page-link(href="#") 3
+             li.page-item
+                 a.page-link(href="#") 4
+             li.page-item
+                 a.page-link(href="#") Trang cuối        
+mixin hot-blog-item(image,text)
+     a(href="detailBlog.html")
+         .hot-blogs__item
+             img(src=image, alt="img")
+             p= text
+mixin blog-tag-item(tag)
+     .col-auto
+         .blog-tags__item= tag     

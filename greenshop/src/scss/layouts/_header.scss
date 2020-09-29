@@ -1,0 +1,107 @@
+header{
+    width: 100%;
+    .top-bar{
+        background-color: rgb( 32, 32, 32 );
+        color: rgb(138,138,138);
+        span{
+            font-size: 1.2rem;
+            line-height: 3.2rem;
+        }
+        &__social--list{
+            list-style: none;
+            display: inline-block;
+            li{
+                display: inline-block;
+                margin-left: 2rem;
+                a{
+                    color: rgb(138,138,138);
+                }
+            }
+        }
+        &__links{
+            line-height: 3.2rem;
+            font-size: 1.2rem;
+            a{
+            margin-left: 0.5rem;
+            color: rgb(138,138,138);
+            }
+            a:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .banner{
+        background-color: rgba( 255, 255, 255, 0.302 );
+        &__brand{
+            height: 10rem;
+            position: relative;
+            img:first-child{
+                position: absolute;
+                height: 10rem;
+                top: 2rem;
+            }
+            img:nth-child(2){
+                position: absolute;
+                right: 8rem;
+                z-index: 1;
+                top: 3rem;
+            }
+            img:nth-child(3){
+                position: absolute;
+                right: 0;
+            }
+            @media(max-width:768px){
+                img:nth-child(2){
+                 display: none;
+                }
+                img:nth-child(3){
+                 display: none;
+                }
+            }
+        }
+        &__search{
+            position: relative;
+            height: 18rem;
+            .input-group{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                input{
+                    padding: 0.5rem;
+                    width: 50%;
+                    outline: none;
+                    height: 3rem;
+                }
+                button{
+                    padding: 0.5rem;
+                }
+            }
+            h5{
+                position: absolute;
+                top:4rem;
+                color: rgb(138,138,138);
+            }
+            a{
+                position: absolute;
+                right: 10rem;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.2rem;
+                font-weight: bolder;
+                color: #333;
+            }
+        }
+    }
+    .nav-bar{
+        background-color: rgb( 63, 184, 113 );
+        font-size: 1.2rem;
+        a{
+            color: #fff !important;
+            font-size: 1.5rem;
+            margin-right: 1.2rem;
+        }
+        a:hover,a.active{
+            background-color: rgb( 54, 166, 109 );
+        }
+    }
+}

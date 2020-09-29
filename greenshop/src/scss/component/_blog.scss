@@ -1,0 +1,123 @@
+.hot-blogs{
+    width: 100%;
+    margin-top: 5rem;
+    &--title{
+        @include title
+    }
+    &__item{
+        width: 100%;
+        height: 10rem;
+        cursor: pointer;
+        img{
+            float: left;
+            margin-right: 1rem;
+        }
+        p{
+             padding-top: 1rem;
+        }
+    }
+    @include line(50%);
+}
+.blog-tags{
+    &--title{
+        @include title
+    }
+    &__item{
+        border: 1px solid gray;
+        padding: 1rem 2rem 1rem 2rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    &__item:hover,&__item:active{
+        border: 1px solid rgb( 63, 184, 113 );
+        color: wheat;
+        background-color: rgb( 63, 184, 113 );
+    }
+    @include line(50%);
+
+}
+.blogs{
+    margin-top: 5rem;
+    &__item{
+        cursor: pointer;
+        .item__title{
+            font-size: 2.5rem;
+        }
+        .item__info{
+            color: gray;
+            font-size: 1.2rem;
+            i{
+                color: rgb( 63, 184, 113 ) ;
+                margin-left: 1rem;
+            }
+        }
+        img{
+            margin: 1rem 0 1rem 0;
+        }
+        .item__text{
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.detail-blog{
+    margin-top: 5rem;
+    &__title{
+        font-size: 3rem;
+    }
+    &__info{
+        color: gray;
+        font-size: 1.2rem;
+        i{
+            color: rgb( 63, 184, 113 ) ;
+            margin-left: 1rem;
+        }
+    }
+    &__content{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+}
+.comment{
+    h3{
+        margin: 5rem 0;
+    }
+    &__item{
+        margin: 5rem 0;
+        img{
+            float: left;
+            width: 7rem;
+            border-radius: 100%;
+        }
+        button{
+            float: right;
+        }
+        &--username{
+            font-weight: bolder;
+            font-style: italic;
+        }
+        &--content{
+            margin:0 5rem;
+        }
+    }
+    &--form{
+        input,textarea{
+            width: 100%;
+            padding: 1rem 0.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        button{
+            padding: 1rem 4rem;
+            text-transform: uppercase;
+            border-radius: 5rem;
+            float: right;
+            outline: none;
+            border: none;
+            background-color: rgb( 63, 184, 113 );
+            color: white;
+            margin-bottom: 5rem;
+        }
+    }
+}

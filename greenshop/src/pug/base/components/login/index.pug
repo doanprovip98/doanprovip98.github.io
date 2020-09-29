@@ -1,0 +1,21 @@
+section.login
+     .container
+         .row
+             .col-lg-6.col-sm-12
+                 .login__form
+                     h3 Thông tin cá nhân
+                     form(action="#")
+                         label(for="email") Email của bạn
+                         input#email(type="email", name="email")
+                         label(for="password") Mật khẩu
+                         input#password(type="password", name="password")
+                         input#check(type="checkbox", name="check")
+                         label(for="check")  Ghi nhớ tài khoản
+                         a(href="#") Bạn đã quên mật khẩu
+                         button.btn.btn-success(type="submit") Đăng nhập
+             .col-lg-6.col-sm-12     
+                 .login__link
+                     h3 Bạn chưa có tài khoản
+                     p Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và thuận tiện hơn ! Ngoài ra còn có rất nhiều ưu đãi dành cho thành viên citybike
+                     button.btn.btn-success
+                         a(href="signup.html") Đăng ký        

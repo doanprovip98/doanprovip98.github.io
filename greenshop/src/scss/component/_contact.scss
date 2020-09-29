@@ -1,0 +1,39 @@
+.contact{
+    margin: 5rem 0;
+    &__info{
+        h3{
+            color: rgb( 63, 184, 113 );
+            font-weight: bolder;
+            margin: 3rem 0;
+            text-transform: uppercase;
+        }
+        input,textarea{
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        label{
+            font-size: 1.5rem;
+            span{
+                color: red;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &__slogan{
+        img{
+            margin-top: 3rem;
+        }
+        p{
+            font-size: 1.3rem;
+            i{
+                color: rgb( 63, 184, 113 );
+            }
+        }
+        p:nth-child(2){
+            margin: 3rem 0;
+        }
+    }
+}

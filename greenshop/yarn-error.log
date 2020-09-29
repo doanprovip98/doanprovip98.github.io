@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @fortawesome/fontawesome-free
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Users\DoanPham\AppData\Local\Microsoft\WindowsApps;C:\Users\DoanPham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DoanPham\AppData\Local\GitHubDesktop\bin;C:\Users\DoanPham\AppData\Roaming\npm;C:\Users\DoanPham\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\DoanPham\Desktop\SunTrainee\project1\28HN_Doan_P1\node_modules\node-sass\vendor\win32-x64-72\binding.node'
+
+npm manifest: 
+  {
+    "name": "28hn_doan_p1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/awesome-academy/28HN_Doan_P1.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/awesome-academy/28HN_Doan_P1/issues"
+    },
+    "homepage": "https://github.com/awesome-academy/28HN_Doan_P1#readme",
+    "devDependencies": {
+      "browser-sync": "^2.26.12",
+      "gulp": "^4.0.2",
+      "gulp-cssmin": "^0.2.0",
+      "gulp-jsmin": "^0.1.5",
+      "gulp-pug": "^4.0.1",
+      "gulp-rename": "^2.0.0",
+      "gulp-sass": "^4.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,96 @@
+mixin product-detail(text)
+     p=text
+     br
+mixin product-item(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+     .col-lg-3.col-sm-6
+         +product(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+.container
+     .row
+         .col-lg-5.col-sm-12
+             section.product-preview
+                 img(src=image3, alt="product")
+                 .row.justify-content-between
+                     .col-2.pr-0.pl-0.ml-4
+                         img(src=image2, alt="product")
+                     .col-2.pr-0.pl-0
+                         img(src=image1, alt="product")
+                     .col-2.pr-0.pl-0
+                         img(src=image4, alt="product")
+                     .col-2.pr-0.pl-0
+                         img(src=image5, alt="product")
+                     .col-2.pr-0.pl-0.mr-4
+                         img(src=image6, alt="product")
+         .col-lg-7.col-sm-12
+             section.product-info    
+                 h3 Cây dạ lam
+                 span 
+                     !=star
+                 p.product-info__price
+                     span.product-info__price--new 4.099.000 đ
+                     span.product-info__price--old 4.099.000 đ
+                 .line
+                 p.product-info__content Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8 đến 1,2m. Lá hình trứng ,mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây Dạ Lam mọc cách, cuống lá dài khi trụng để lại các khía màu nâu nhạt.
+                 .line
+                 label(for="number") Số lượng
+                 .btn.btn-increase -
+                 input(type="text" value="1")
+                 .btn.btn-decrease +
+                 .line
+                 .btn.btn-buy Mua ngay
+                 .btn.btn-search
+                     != '<i class="fas fa-search"></i>'
+                 .btn.btn-heart.btn
+                     !='<i class="fas fa-heart"></i>'
+                 br
+                 .btn-facebook.btn
+                     !='<i class="fab fa-facebook-square"></i>'+' Like'
+                 .btn-tweet.btn
+                     !='<i class="fab fa-twitter"></i>'+'Tweet'
+                 .btn-google.btn
+                     !='<i class="fab fa-google-plus-g"></i>'+'1'     
+                 .btn-share.btn
+                     !='<i class="fas fa-plus-square"></i>'+'1'+' Share'
+         .col-12
+             section.product-tab
+                 ul.nav.nav-tabs
+                     li.nav-item
+                         a.active.nav-link(href="#tab1" data-toggle="tab") Thông tin sản phẩm        
+                     li.nav-item
+                         a.nav-link(href="#tab2" data-toggle="tab") Khách hàng đánh giá
+                     li.nav-item
+                         a.nav-link(href="#tab3" data-toggle="tab") Thẻ tag
+                 .tab-content
+                     .tab-pane.container.active#tab1.product-tab__item
+                         +product-detail(detailProductText1)
+                         +product-detail(detailProductText2)
+                         +product-detail(detailProductText3)
+                         +product-detail(detailProductText4)
+                         +product-detail(detailProductText5)
+                         +product-detail(detailProductText6)
+                     .tab-pane.container.fade#tab2.product-tab__item 
+                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas cupiditate commodi harum, modi sit quibusdam aperiam expedita ex doloremque beatae in praesentium quaerat ipsa nihil eum, libero veniam dolorem illum odio! Tenetur ratione nisi nihil ipsam mollitia sit voluptatibus explicabo odit hic quo, libero molestiae! Impedit reprehenderit cum voluptates incidunt a quas suscipit ullam, odit quis accusantium dolores laborum commodi. Nobis velit voluptatum delectus asperiores fugiat odio iure! Debitis possimus harum ullam voluptate veniam impedit quas. Voluptatem, nemo inventore quasi error unde maiores neque voluptate repellendus, ut, dolorum laborum ab earum minima sapiente est. Quo amet eos tempore, laboriosam debitis nesciunt alias possimus dolorem laborum, veniam aliquid, totam cum architecto enim obcaecati? Corrupti cumque delectus odit esse distinctio accusamus amet doloribus nam, voluptatibus unde sed aliquid numquam dolore obcaecati nemo similique vero est repellendus deleniti quis autem error! Perferendis ea voluptatibus quas ex ut, explicabo qui molestias delectus cupiditate dignissimos voluptatem sapiente mollitia dolores doloribus! Enim qui quis laboriosam nisi. Iusto quidem dolores nihil debitis quas? Mollitia molestias, molestiae omnis sapiente illum animi ducimus? Quaerat quas quidem similique modi ullam quam sed commodi fugiat placeat dolor, expedita magni? Sed nesciunt autem voluptates nihil maxime sunt odio, provident eligendi libero. Consectetur fugit qui at, cupiditate officiis tenetur accusamus asperiores unde culpa maxime minus dolorum cumque debitis eos dicta nihil eveniet obcaecati nam vel aperiam, necessitatibus tempore doloremque veritatis dignissimos! Pariatur ex suscipit consequatur dolores odit minus impedit accusantium sed, quod, modi voluptatum nemo non sequi. Ipsum vitae suscipit adipisci quia earum sapiente! Laboriosam nihil exercitationem iste sed sunt quae facere modi pariatur! Eveniet quis, libero nobis beatae similique corrupti, tempora animi quia expedita maiores non quisquam sequi architecto est possimus? Quo, obcaecati! Quisquam rerum molestiae quia accusamus aut minima expedita similique vel, velit illo dolorum alias suscipit ipsa exercitationem id? 
+                     .tab-pane.container.fade#tab3.product-tab__item 
+                        .row
+                             +blog-tag-item(blogTag1)
+                             +blog-tag-item(blogTag2)                
+                             +blog-tag-item(blogTag3)                
+                             +blog-tag-item(blogTag4)                
+                             +blog-tag-item(blogTag5)                
+                             +blog-tag-item(blogTag6)                
+                             +blog-tag-item(blogTag7)                
+                             +blog-tag-item(blogTag8)
+                             +blog-tag-item(blogTag9)                
+         .col-12
+             section.product-same-type
+                 h4.product-same-type--title Sản phẩm cùng loại
+                 .line
+                     .line__child
+                 .row
+                     +product-item(image1,"Cây chân chim","200.000 đ","250.000 đ",isTag,green,"new")
+                     +product-item(image2,"Cây Dạ Lam","100.000 đ","250.000 đ",isTag,green,"new")
+                     +product-item(image3,"Cây Danh Dự","150.000 đ","250.000 đ",isTag,green,"new")
+                     +product-item(image4,"Cây dứa nhỏ","300.000 đ","250.000 đ",isTag,green,"new")
+                                              
+
+                    
+                 

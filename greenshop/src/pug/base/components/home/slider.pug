@@ -1,0 +1,20 @@
+section.slider
+     .container-fluid.pr-0.pl-0
+         #slider.carousel.slide.carousel-fade(data-ride='carousel')
+             ol.carousel-indicators
+                 li(data-target="#slider" data-slide-to="0" class="active")
+                 li(data-target="#slider" data-slide-to="1")
+                 li(data-target="#slider" data-slide-to="2")
+             .carousel-inner(role="listbox")
+                 .carousel-item.active
+                     .slider__item
+                         button.btn.btn-success Xem chi tiết
+                         img.d-block.w-100(src=slider1, alt="First slide")
+                 .carousel-item
+                     .slider__item
+                         button.btn.btn-success Xem chi tiết
+                         img.d-block.w-100(src=slider2, alt="Second slide")
+                 .carousel-item
+                     .slider__item
+                         button.btn.btn-success Xem chi tiết    
+                         img.d-block.w-100(src=slider3, alt="Third slide")   

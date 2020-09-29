@@ -1,0 +1,97 @@
+mixin most-product__item(image,name,price)
+     .col-lg-12.col-md-4.col-sm-12
+         a(href="detailProduct.html")    
+             .most-products__item
+                 img(src=image, alt="image")
+                 p.item__name= name
+                 span.item__star
+                     != star
+                 p.item__price= price
+mixin sale-product__item(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+     .col-lg-4.col-sm-6
+         +product(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+mixin new-product__item(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+     .col-lg-3.col-sm-6
+         +product(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+mixin blog-item(image,title,content)
+     .col-lg-4.col-sm-12
+         .blog__item
+             img.d-block.w-100(src=image, alt="image")
+             p.blog__item--date Thứ 7 , ngày 31, tháng 12, năm 2015
+             p.blog__item--title=title
+             p.blog__item--content=content
+             a(href="detailBlog.html") Đọc tiếp
+section.hot-products
+     .container
+         h5.hot-products--title Sản phẩm nổi bật
+         .line
+             .line__child
+         .row
+             .col-lg-6.col-sm-12
+                 .row
+                     .col-12
+                         +product(image1,"Cây chân chim","250.000 đ","250.000 đ",isTag,green,"new")
+                     .col-6
+                         +product(image2,"Cây cọ ta","150.000 đ","250.000 đ")
+                     .col-6
+                         +product(image3,"Cây dứa nhỏ","375.000 đ","250.000 đ")
+             .col-lg-6.col-sm-12     
+                 .row
+                     .col-6
+                         +product(image4,"Cây Dạ Lam","500.000 đ","250.000 đ",isTag,red,"-50%")
+                     .col-6
+                         +product(image5,"Cây Danh Dự","850.000 đ","250.000 đ",isTag,green,"new")
+                     .col-12
+                         +product(image6,"Cây đa búp đỏ","1.000.000 đ","250.000 đ",isTag,red,"-50%")
+.container
+     .row
+         .col-lg-3.col-md-12
+             section.most-products
+                 h5.most-products--title Sản phẩm mua nhiều
+                 .line
+                     .line__child
+                 .row
+                     +most-product__item(image1,"Cây chân chim","250.000 đ")
+                     +most-product__item(image3,"Cây Dạ Lam","150.000 đ")
+                     +most-product__item(image5,"Cây Danh Dự","450.000 đ")
+                     +most-product__item(image4,"Cây đa búp đủ","200.000 đ")
+                     +most-product__item(image2,"Cây cọ ta","300.000 đ")
+                     +most-product__item(image6,"Cây dứa nhỏ","275.000 đ")
+         .col-lg-9.col-md-12
+             section.sale-products
+                 h5.sale-products--title Sản phẩm  khuyến mại
+                 .line
+                     .line__child
+                 .row
+                     +sale-product__item(image4,"Cây Dạ Lam","500.000 đ","250.000 đ",isTag,red,"-50%")
+                     +sale-product__item(image2,"Cây dứa nhỏ","668.000 đ","250.000 đ",isTag,red,"-10%")
+                     +sale-product__item(image3,"Cây cọ ta","770.000 đ","250.000 đ",isTag,red,"-20%")
+                     +sale-product__item(image6,"Cây Danh Dự","445.000 đ","250.000 đ",isTag,red,"-25%")
+                     +sale-product__item(image5,"Cây chân chim","500.000 đ","250.000 đ",isTag,red,"-15%")
+                     +sale-product__item(image4,"Cây Dạ Lam","500.000 đ","250.000 đ",isTag,red,"-50%")
+.container
+     section.mid-banner
+         img.d-block.w-100(src="assets/images/banner.png", alt="banner")
+section.new-products
+     .container
+         h5.new-products--title Sản phẩm mới
+         .line
+             .line__child
+         .row
+             +new-product__item(image1,"Cây chân chim","200.000 đ","250.000 đ",isTag,green,"new")
+             +new-product__item(image2,"Cây Dạ Lam","100.000 đ","250.000 đ",isTag,green,"new")
+             +new-product__item(image3,"Cây Danh Dự","150.000 đ","250.000 đ",isTag,green,"new")
+             +new-product__item(image4,"Cây dứa nhỏ","300.000 đ","250.000 đ",isTag,green,"new")
+             +new-product__item(image5,"Cây cọ ta","400.000 đ","250.000 đ",isTag,green,"new")
+             +new-product__item(image6,"Cây xương rồng","180.000 đ","250.000 đ",isTag,green,"new")
+             +new-product__item(image7,"Cây chân chim","345.000 đ","250.000 đ",isTag,green,"new")
+             +new-product__item(image8,"Cây đa búp đỏ","1.000.000 đ","250.000 đ",isTag,green,"new")
+section.blog
+     .container
+         .h5.blog--title Tin tức
+         .line
+             .line__child
+         .row
+             +blog-item(blogImg1,blogTitle1,blogContent1)
+             +blog-item(blogImg2,blogTitle2,blogContent2)
+             +blog-item(blogImg3,blogTitle3,blogContent3)

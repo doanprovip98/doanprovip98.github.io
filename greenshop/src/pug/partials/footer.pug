@@ -1,0 +1,72 @@
+mixin linkSocial(classIcon)
+     a(href="#")
+         i(class=classIcon)
+mixin link(name)
+     a(href="#")!= "&rsaquo;" + name
+mixin listLink(list)
+     each item in list
+         +link(item)
+         br
+footer
+     section.foot-1
+         .container
+             .row
+                 .col-lg-4.col-md-8.col-sm-12
+                     .foot-1__item
+                         h4 Kênh thông tin từ chúng tôi:
+                         each item in social
+                             +linkSocial(item)       
+                 .col-lg-2.col-md-4.col-sm-12
+                     .foot-1__item
+                         h4 Đăng kí nhận Email từ chúng tôi
+                 .col-lg-6.col-md-12.col-sm-12
+                     .foot-1__item
+                         .input-group
+                             input(type="text" class="form-control" name="Email" )
+                             .input-group-append
+                                 button.btn
+                                     i(class="fas fa-paper-plane")
+     hr
+     section.foot-2
+         .container
+             .row
+                 .col-lg-4.col-md-12
+                     .foot-2__item.foot-2__item--about
+                         img(src="assets/images/logo.png", alt="logo")
+                         p Greenshop được thành lập từ  8/2010 được sự tin tưởng của khách hàng từ trước đến nay cửa hàng ngày 1 phát triển.
+                         p
+                             !='<i class="fas fa-mobile-alt"></i>'+'  Điện thoại: (84-4) 66.558.868'
+                         p
+                             !='<i class="far fa-envelope"></i>'+'  Email: info@dkt.com.vn'
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Thông tin khách hàng
+                         +listLink(list1)
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Hỗ trợ dịch vụ
+                         +listLink(list2)
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Chính sách ưu đãi
+                         +listLink(list3)
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Tin tức
+                         +listLink(list4)                               
+     hr
+     section.foot-3
+         .container
+             .row.justify-content-between
+                 .col-auto
+                     .foot-3__item.foot-3__item--links
+                         each item in list5
+                             a(href="#")= item
+                 .col-auto            
+                     .foot-3__item.foot-3__item--pay
+                         each item in list6
+                             a(href="#")!= item     
+     section.foot-4
+         h5
+             !='Thiết kế bởi Bizweb'+'&copy'
+             

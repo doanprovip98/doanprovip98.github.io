@@ -1,0 +1,35 @@
+section.signup
+     .container
+         form(action="#")
+             h3 Thông tin cá nhân
+             .row
+                 .col-lg-6.col-sm-12
+                     label(for="name")
+                        !='Họ và tên '+'<span>*</span>'
+                     input#name(type="text", name="name")
+                 .col-lg-6.col-sm-12
+                     label(for="phone")
+                         !='Số điện thoại '+'<span>*</span>'
+                     input#phone(type="text", name="phone")
+                 .col-lg-6.col-sm-12
+                     label(for="email")
+                         !='Địa chỉ email '+'<span>*</span>'
+                     input#email(type="email", name="email")
+                 .col-lg-6.col-sm-12
+                     label(for="web")
+                         !='Website của bạn '+'<span>*</span>'
+                     input#web(type="text", name="web")
+             input#check(type="checkbox", name="check")       
+             label(for="check")  Đăng ký nhận thông tin qua email
+             h3 Thông tin tài khoản
+             .row
+                 .col-lg-6.col-sm-12
+                     label(for="password")
+                         !='Mật khẩu '+'<span>*</span>'
+                     input#password(type="password", name="password")
+                 .col-lg-6.col-sm-12
+                     label(for="confirmPassword")
+                         !='Nhập lại mật khẩu '+'<span>*</span>'
+                     input#confirmPassword(type="password", name="confirmPassword")
+             button.btn.btn-outline-success quay lại
+             button.btn.btn-success đăng ký       
